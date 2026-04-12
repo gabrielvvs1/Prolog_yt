@@ -26,7 +26,7 @@ pessoa(cesaltina,data(30,fevereiro,1984)).
 pessoa(celeste,data(21,maio,1987)).    //
 
  %Querry
-aniversario(Nome,Dia,Mes). %traz o nome das pessoas o dia e mes
+pessoa(Nome, data(Dia, Mes, Ano)). %traz o nome das pessoas o dia e mes
 aniversario(X,Y):- pessoa(X,data(Y,_,Ano)),Ano<1997. %busca as pessoas que nasceram em ano inferior que 97
 
 
